@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C15B9A71AD3008900664DED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9A61AD3008900664DED /* AppDelegate.m */; };
+		9C15B9A91AD3008900664DED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9A81AD3008900664DED /* main.m */; };
+		9C15B9AC1AD3008900664DED /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9AB1AD3008900664DED /* GameScene.m */; };
+		9C15B9AE1AD3008900664DED /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9C15B9AD1AD3008900664DED /* GameScene.sks */; };
+		9C15B9B01AD3008900664DED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C15B9AF1AD3008900664DED /* Images.xcassets */; };
+		9C15B9B31AD3008900664DED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C15B9B11AD3008900664DED /* MainMenu.xib */; };
+		9C15B9BF1AD3008900664DED /* CG_PongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9BE1AD3008900664DED /* CG_PongTests.m */; };
+		9C15B9D91AD3021A00664DED /* PlayfieldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9CB1AD3021A00664DED /* PlayfieldScene.m */; };
+		9C15B9DA1AD3021A00664DED /* BallNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9CD1AD3021A00664DED /* BallNode.m */; };
+		9C15B9DB1AD3021A00664DED /* PlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9CF1AD3021A00664DED /* PlayerNode.m */; };
+		9C15B9DC1AD3021A00664DED /* PaddleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9D11AD3021A00664DED /* PaddleNode.m */; };
+		9C15B9DD1AD3021A00664DED /* ScoreNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9D31AD3021A00664DED /* ScoreNode.m */; };
+		9C15B9DE1AD3021A00664DED /* ResetNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9D51AD3021A00664DED /* ResetNode.m */; };
+		9C15B9DF1AD3021A00664DED /* VisitablePhysicsBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9D71AD3021A00664DED /* VisitablePhysicsBody.m */; };
+		9C15B9E91AD3022E00664DED /* ContactVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9E21AD3022E00664DED /* ContactVisitor.m */; };
+		9C15B9EA1AD3022E00664DED /* BallNodeContactVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9E41AD3022E00664DED /* BallNodeContactVisitor.m */; };
+		9C15B9EB1AD3022E00664DED /* PaddleNodeContactVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9E61AD3022E00664DED /* PaddleNodeContactVisitor.m */; };
+		9C15B9EC1AD3022E00664DED /* PlayfieldSceneContactVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15B9E81AD3022E00664DED /* PlayfieldSceneContactVisitor.m */; };
+		9C15B9EE1AD3186100664DED /* cglogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C15B9ED1AD3186000664DED /* cglogo.png */; };
+		9C15BB171AD327ED00664DED /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C15BB161AD327EC00664DED /* OpenGL.framework */; };
+		9C15BB271AD328E000664DED /* TuioClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15BB1B1AD328E000664DED /* TuioClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9C15BB281AD328E000664DED /* TuioCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15BB1D1AD328E000664DED /* TuioCursor.m */; };
+		9C15BB291AD328E000664DED /* TuioObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15BB1F1AD328E000664DED /* TuioObject.m */; };
+		9C15BB2A1AD328E000664DED /* WSOSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15BB221AD328E000664DED /* WSOSCBundle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9C15BB2B1AD328E000664DED /* WSOSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15BB241AD328E000664DED /* WSOSCMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9C15BB2C1AD328E000664DED /* WSOSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C15BB261AD328E000664DED /* WSOSCPacket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9C3BCF581AD6F43A00B624CD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3BCF571AD6F43A00B624CD /* AVFoundation.framework */; };
+		9C3BCF5A1AD6F75300B624CD /* bounce.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C3BCF591AD6F75300B624CD /* bounce.wav */; };
+		9C3BCF5C1AD6F7D600B624CD /* score.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C3BCF5B1AD6F7D600B624CD /* score.wav */; };
+		9C3BCF5E1AD6FAA500B624CD /* winner.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9C3BCF5D1AD6FAA500B624CD /* winner.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C15B9B91AD3008900664DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C15B9981AD3008900664DED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C15B99F1AD3008900664DED;
+			remoteInfo = "CG-Pong";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C15B9A01AD3008900664DED /* CG-Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CG-Pong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C15B9A41AD3008900664DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C15B9A51AD3008900664DED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C15B9A61AD3008900664DED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C15B9A81AD3008900664DED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C15B9AA1AD3008900664DED /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		9C15B9AB1AD3008900664DED /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		9C15B9AD1AD3008900664DED /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		9C15B9AF1AD3008900664DED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C15B9B21AD3008900664DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9C15B9B81AD3008900664DED /* CG-PongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CG-PongTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C15B9BD1AD3008900664DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C15B9BE1AD3008900664DED /* CG_PongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CG_PongTests.m; sourceTree = "<group>"; };
+		9C15B9C91AD3021A00664DED /* NodeCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeCategories.h; sourceTree = "<group>"; };
+		9C15B9CA1AD3021A00664DED /* PlayfieldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayfieldScene.h; sourceTree = "<group>"; };
+		9C15B9CB1AD3021A00664DED /* PlayfieldScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayfieldScene.m; sourceTree = "<group>"; };
+		9C15B9CC1AD3021A00664DED /* BallNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallNode.h; sourceTree = "<group>"; };
+		9C15B9CD1AD3021A00664DED /* BallNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallNode.m; sourceTree = "<group>"; };
+		9C15B9CE1AD3021A00664DED /* PlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerNode.h; sourceTree = "<group>"; };
+		9C15B9CF1AD3021A00664DED /* PlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerNode.m; sourceTree = "<group>"; };
+		9C15B9D01AD3021A00664DED /* PaddleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddleNode.h; sourceTree = "<group>"; };
+		9C15B9D11AD3021A00664DED /* PaddleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddleNode.m; sourceTree = "<group>"; };
+		9C15B9D21AD3021A00664DED /* ScoreNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreNode.h; sourceTree = "<group>"; };
+		9C15B9D31AD3021A00664DED /* ScoreNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreNode.m; sourceTree = "<group>"; };
+		9C15B9D41AD3021A00664DED /* ResetNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetNode.h; sourceTree = "<group>"; };
+		9C15B9D51AD3021A00664DED /* ResetNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetNode.m; sourceTree = "<group>"; };
+		9C15B9D61AD3021A00664DED /* VisitablePhysicsBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitablePhysicsBody.h; sourceTree = "<group>"; };
+		9C15B9D71AD3021A00664DED /* VisitablePhysicsBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitablePhysicsBody.m; sourceTree = "<group>"; };
+		9C15B9D81AD3021A00664DED /* RandomHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomHelper.h; sourceTree = "<group>"; };
+		9C15B9E11AD3022E00664DED /* ContactVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactVisitor.h; sourceTree = "<group>"; };
+		9C15B9E21AD3022E00664DED /* ContactVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactVisitor.m; sourceTree = "<group>"; };
+		9C15B9E31AD3022E00664DED /* BallNodeContactVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallNodeContactVisitor.h; sourceTree = "<group>"; };
+		9C15B9E41AD3022E00664DED /* BallNodeContactVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallNodeContactVisitor.m; sourceTree = "<group>"; };
+		9C15B9E51AD3022E00664DED /* PaddleNodeContactVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddleNodeContactVisitor.h; sourceTree = "<group>"; };
+		9C15B9E61AD3022E00664DED /* PaddleNodeContactVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddleNodeContactVisitor.m; sourceTree = "<group>"; };
+		9C15B9E71AD3022E00664DED /* PlayfieldSceneContactVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayfieldSceneContactVisitor.h; sourceTree = "<group>"; };
+		9C15B9E81AD3022E00664DED /* PlayfieldSceneContactVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayfieldSceneContactVisitor.m; sourceTree = "<group>"; };
+		9C15B9ED1AD3186000664DED /* cglogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cglogo.png; sourceTree = "<group>"; };
+		9C15BB161AD327EC00664DED /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		9C15BB191AD328E000664DED /* TUIO_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUIO_Prefix.pch; sourceTree = "<group>"; };
+		9C15BB1A1AD328E000664DED /* TuioClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioClient.h; sourceTree = "<group>"; };
+		9C15BB1B1AD328E000664DED /* TuioClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuioClient.m; sourceTree = "<group>"; };
+		9C15BB1C1AD328E000664DED /* TuioCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioCursor.h; sourceTree = "<group>"; };
+		9C15BB1D1AD328E000664DED /* TuioCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuioCursor.m; sourceTree = "<group>"; };
+		9C15BB1E1AD328E000664DED /* TuioObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioObject.h; sourceTree = "<group>"; };
+		9C15BB1F1AD328E000664DED /* TuioObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuioObject.m; sourceTree = "<group>"; };
+		9C15BB211AD328E000664DED /* WSOSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSOSCBundle.h; sourceTree = "<group>"; };
+		9C15BB221AD328E000664DED /* WSOSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSOSCBundle.m; sourceTree = "<group>"; };
+		9C15BB231AD328E000664DED /* WSOSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSOSCMessage.h; sourceTree = "<group>"; };
+		9C15BB241AD328E000664DED /* WSOSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSOSCMessage.m; sourceTree = "<group>"; };
+		9C15BB251AD328E000664DED /* WSOSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSOSCPacket.h; sourceTree = "<group>"; };
+		9C15BB261AD328E000664DED /* WSOSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSOSCPacket.m; sourceTree = "<group>"; };
+		9C3BCF571AD6F43A00B624CD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9C3BCF591AD6F75300B624CD /* bounce.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bounce.wav; sourceTree = "<group>"; };
+		9C3BCF5B1AD6F7D600B624CD /* score.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = score.wav; sourceTree = "<group>"; };
+		9C3BCF5D1AD6FAA500B624CD /* winner.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = winner.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C15B99D1AD3008900664DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3BCF581AD6F43A00B624CD /* AVFoundation.framework in Frameworks */,
+				9C15BB171AD327ED00664DED /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C15B9B51AD3008900664DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C15B9971AD3008900664DED = {
+			isa = PBXGroup;
+			children = (
+				9C3BCF571AD6F43A00B624CD /* AVFoundation.framework */,
+				9C15BB181AD328E000664DED /* TUIO */,
+				9C15BB161AD327EC00664DED /* OpenGL.framework */,
+				9C15B9A21AD3008900664DED /* CG-Pong */,
+				9C15B9BB1AD3008900664DED /* CG-PongTests */,
+				9C15B9A11AD3008900664DED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C15B9A11AD3008900664DED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C15B9A01AD3008900664DED /* CG-Pong.app */,
+				9C15B9B81AD3008900664DED /* CG-PongTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C15B9A21AD3008900664DED /* CG-Pong */ = {
+			isa = PBXGroup;
+			children = (
+				9C15B9AA1AD3008900664DED /* GameScene.h */,
+				9C15B9AB1AD3008900664DED /* GameScene.m */,
+				9C15B9AD1AD3008900664DED /* GameScene.sks */,
+				9C15B9C81AD301B900664DED /* Model */,
+				9C15B9E01AD3022400664DED /* Visitors */,
+				9C15B9A51AD3008900664DED /* AppDelegate.h */,
+				9C15B9A61AD3008900664DED /* AppDelegate.m */,
+				9C15B9AF1AD3008900664DED /* Images.xcassets */,
+				9C15B9ED1AD3186000664DED /* cglogo.png */,
+				9C15B9B11AD3008900664DED /* MainMenu.xib */,
+				9C15B9A31AD3008900664DED /* Supporting Files */,
+			);
+			path = "CG-Pong";
+			sourceTree = "<group>";
+		};
+		9C15B9A31AD3008900664DED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C3BCF5D1AD6FAA500B624CD /* winner.wav */,
+				9C3BCF5B1AD6F7D600B624CD /* score.wav */,
+				9C3BCF591AD6F75300B624CD /* bounce.wav */,
+				9C15B9A41AD3008900664DED /* Info.plist */,
+				9C15B9A81AD3008900664DED /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C15B9BB1AD3008900664DED /* CG-PongTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C15B9BE1AD3008900664DED /* CG_PongTests.m */,
+				9C15B9BC1AD3008900664DED /* Supporting Files */,
+			);
+			path = "CG-PongTests";
+			sourceTree = "<group>";
+		};
+		9C15B9BC1AD3008900664DED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C15B9BD1AD3008900664DED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C15B9C81AD301B900664DED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C15B9C91AD3021A00664DED /* NodeCategories.h */,
+				9C15B9CA1AD3021A00664DED /* PlayfieldScene.h */,
+				9C15B9CB1AD3021A00664DED /* PlayfieldScene.m */,
+				9C15B9CC1AD3021A00664DED /* BallNode.h */,
+				9C15B9CD1AD3021A00664DED /* BallNode.m */,
+				9C15B9CE1AD3021A00664DED /* PlayerNode.h */,
+				9C15B9CF1AD3021A00664DED /* PlayerNode.m */,
+				9C15B9D01AD3021A00664DED /* PaddleNode.h */,
+				9C15B9D11AD3021A00664DED /* PaddleNode.m */,
+				9C15B9D21AD3021A00664DED /* ScoreNode.h */,
+				9C15B9D31AD3021A00664DED /* ScoreNode.m */,
+				9C15B9D41AD3021A00664DED /* ResetNode.h */,
+				9C15B9D51AD3021A00664DED /* ResetNode.m */,
+				9C15B9D61AD3021A00664DED /* VisitablePhysicsBody.h */,
+				9C15B9D71AD3021A00664DED /* VisitablePhysicsBody.m */,
+				9C15B9D81AD3021A00664DED /* RandomHelper.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9C15B9E01AD3022400664DED /* Visitors */ = {
+			isa = PBXGroup;
+			children = (
+				9C15B9E11AD3022E00664DED /* ContactVisitor.h */,
+				9C15B9E21AD3022E00664DED /* ContactVisitor.m */,
+				9C15B9E31AD3022E00664DED /* BallNodeContactVisitor.h */,
+				9C15B9E41AD3022E00664DED /* BallNodeContactVisitor.m */,
+				9C15B9E51AD3022E00664DED /* PaddleNodeContactVisitor.h */,
+				9C15B9E61AD3022E00664DED /* PaddleNodeContactVisitor.m */,
+				9C15B9E71AD3022E00664DED /* PlayfieldSceneContactVisitor.h */,
+				9C15B9E81AD3022E00664DED /* PlayfieldSceneContactVisitor.m */,
+			);
+			name = Visitors;
+			sourceTree = "<group>";
+		};
+		9C15BB181AD328E000664DED /* TUIO */ = {
+			isa = PBXGroup;
+			children = (
+				9C15BB191AD328E000664DED /* TUIO_Prefix.pch */,
+				9C15BB1A1AD328E000664DED /* TuioClient.h */,
+				9C15BB1B1AD328E000664DED /* TuioClient.m */,
+				9C15BB1C1AD328E000664DED /* TuioCursor.h */,
+				9C15BB1D1AD328E000664DED /* TuioCursor.m */,
+				9C15BB1E1AD328E000664DED /* TuioObject.h */,
+				9C15BB1F1AD328E000664DED /* TuioObject.m */,
+				9C15BB201AD328E000664DED /* WSOSC */,
+			);
+			name = TUIO;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9C15BB201AD328E000664DED /* WSOSC */ = {
+			isa = PBXGroup;
+			children = (
+				9C15BB211AD328E000664DED /* WSOSCBundle.h */,
+				9C15BB221AD328E000664DED /* WSOSCBundle.m */,
+				9C15BB231AD328E000664DED /* WSOSCMessage.h */,
+				9C15BB241AD328E000664DED /* WSOSCMessage.m */,
+				9C15BB251AD328E000664DED /* WSOSCPacket.h */,
+				9C15BB261AD328E000664DED /* WSOSCPacket.m */,
+			);
+			path = WSOSC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C15B99F1AD3008900664DED /* CG-Pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C15B9C21AD3008900664DED /* Build configuration list for PBXNativeTarget "CG-Pong" */;
+			buildPhases = (
+				9C15B99C1AD3008900664DED /* Sources */,
+				9C15B99D1AD3008900664DED /* Frameworks */,
+				9C15B99E1AD3008900664DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CG-Pong";
+			productName = "CG-Pong";
+			productReference = 9C15B9A01AD3008900664DED /* CG-Pong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C15B9B71AD3008900664DED /* CG-PongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C15B9C51AD3008900664DED /* Build configuration list for PBXNativeTarget "CG-PongTests" */;
+			buildPhases = (
+				9C15B9B41AD3008900664DED /* Sources */,
+				9C15B9B51AD3008900664DED /* Frameworks */,
+				9C15B9B61AD3008900664DED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C15B9BA1AD3008900664DED /* PBXTargetDependency */,
+			);
+			name = "CG-PongTests";
+			productName = "CG-PongTests";
+			productReference = 9C15B9B81AD3008900664DED /* CG-PongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C15B9981AD3008900664DED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = cg;
+				TargetAttributes = {
+					9C15B99F1AD3008900664DED = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					9C15B9B71AD3008900664DED = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 9C15B99F1AD3008900664DED;
+					};
+				};
+			};
+			buildConfigurationList = 9C15B99B1AD3008900664DED /* Build configuration list for PBXProject "CG-Pong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C15B9971AD3008900664DED;
+			productRefGroup = 9C15B9A11AD3008900664DED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C15B99F1AD3008900664DED /* CG-Pong */,
+				9C15B9B71AD3008900664DED /* CG-PongTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C15B99E1AD3008900664DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3BCF5E1AD6FAA500B624CD /* winner.wav in Resources */,
+				9C15B9EE1AD3186100664DED /* cglogo.png in Resources */,
+				9C3BCF5A1AD6F75300B624CD /* bounce.wav in Resources */,
+				9C15B9AE1AD3008900664DED /* GameScene.sks in Resources */,
+				9C15B9B01AD3008900664DED /* Images.xcassets in Resources */,
+				9C3BCF5C1AD6F7D600B624CD /* score.wav in Resources */,
+				9C15B9B31AD3008900664DED /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C15B9B61AD3008900664DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C15B99C1AD3008900664DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C15B9DD1AD3021A00664DED /* ScoreNode.m in Sources */,
+				9C15B9EB1AD3022E00664DED /* PaddleNodeContactVisitor.m in Sources */,
+				9C15B9DB1AD3021A00664DED /* PlayerNode.m in Sources */,
+				9C15B9A91AD3008900664DED /* main.m in Sources */,
+				9C15BB271AD328E000664DED /* TuioClient.m in Sources */,
+				9C15B9AC1AD3008900664DED /* GameScene.m in Sources */,
+				9C15BB2B1AD328E000664DED /* WSOSCMessage.m in Sources */,
+				9C15BB291AD328E000664DED /* TuioObject.m in Sources */,
+				9C15BB281AD328E000664DED /* TuioCursor.m in Sources */,
+				9C15B9EC1AD3022E00664DED /* PlayfieldSceneContactVisitor.m in Sources */,
+				9C15B9EA1AD3022E00664DED /* BallNodeContactVisitor.m in Sources */,
+				9C15B9DC1AD3021A00664DED /* PaddleNode.m in Sources */,
+				9C15B9DA1AD3021A00664DED /* BallNode.m in Sources */,
+				9C15B9A71AD3008900664DED /* AppDelegate.m in Sources */,
+				9C15B9E91AD3022E00664DED /* ContactVisitor.m in Sources */,
+				9C15B9DF1AD3021A00664DED /* VisitablePhysicsBody.m in Sources */,
+				9C15B9D91AD3021A00664DED /* PlayfieldScene.m in Sources */,
+				9C15B9DE1AD3021A00664DED /* ResetNode.m in Sources */,
+				9C15BB2A1AD328E000664DED /* WSOSCBundle.m in Sources */,
+				9C15BB2C1AD328E000664DED /* WSOSCPacket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C15B9B41AD3008900664DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C15B9BF1AD3008900664DED /* CG_PongTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C15B9BA1AD3008900664DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C15B99F1AD3008900664DED /* CG-Pong */;
+			targetProxy = 9C15B9B91AD3008900664DED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C15B9B11AD3008900664DED /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C15B9B21AD3008900664DED /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C15B9C01AD3008900664DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9C15B9C11AD3008900664DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9C15B9C31AD3008900664DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CG-Pong/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C15B9C41AD3008900664DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CG-Pong/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9C15B9C61AD3008900664DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CG-PongTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CG-Pong.app/Contents/MacOS/CG-Pong";
+			};
+			name = Debug;
+		};
+		9C15B9C71AD3008900664DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CG-PongTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CG-Pong.app/Contents/MacOS/CG-Pong";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C15B99B1AD3008900664DED /* Build configuration list for PBXProject "CG-Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C15B9C01AD3008900664DED /* Debug */,
+				9C15B9C11AD3008900664DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C15B9C21AD3008900664DED /* Build configuration list for PBXNativeTarget "CG-Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C15B9C31AD3008900664DED /* Debug */,
+				9C15B9C41AD3008900664DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C15B9C51AD3008900664DED /* Build configuration list for PBXNativeTarget "CG-PongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C15B9C61AD3008900664DED /* Debug */,
+				9C15B9C71AD3008900664DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C15B9981AD3008900664DED /* Project object */;
+}
